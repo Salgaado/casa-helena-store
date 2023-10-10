@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="header-wrapper header-wrapper--fixed {{headerAdditionalClasses}}" id="header-wrapper" data-ms-theme="fashion">
+  {{#if flash.enabled}}
+    {{> components/flash_tools}}
+  {{/if}}
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class=" header-mobile">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="d-lg-block">
+        <a href="/" id="logo-wrapper" class="nav-tools__logo-wrapper">
+          {{#if logo}}
+            <img  class="img-header" id="image-logo" src="{{logo}}" alt="{{name}}" />
+          {{else}}
+          <span class="header--custom-text">
+            {{name}}
+          </span>
+          {{/if}}
+        </a>
+      </div>
+      <div class="h-bag-icon">
+        <span class="icon-bag">
+          <img src="https://i.postimg.cc/0NJKk66T/Vector-2.png">
+        </span>
+        <span class="bag-icon-text">Vá para a <br><b>sua sacola</b></span>
+      </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo-offcanvas" src="https://i.postimg.cc/mrmK0nJ9/logo-2-1.png"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img class="logo-home-offcanvas" src="https://i.postimg.cc/2ytkr6t4/CASA-HELENA-1.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/FzcXxMdh/Vector-5.png"> SUPER OFERTAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/fTtf8wRc/icon-buld-idea.png"> ELETRODOMÉSTICOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/3xLrWH2q/Group.png"> CASA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/h4NY0Z15/Vector-2.png"> CUIDADO E BELEZA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/B6SCpHjb/icon-box.png"> CAMA, MESA E BANHO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/fy3mqKDz/ferramentas.png"> FERRAMENTAS</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control" type="search" placeholder="Procure :)" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">
+                <span class=" icon-search">
+                  <img src="https://i.postimg.cc/WpJnt3Zw/Group.png">
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+  </div>
+
+  
+  <div class="container-fluid">
+      <div class="d-lg-block">
+        <a href="/" id="logo-wrapper" class="nav-tools__logo-wrapper">
+          {{#if logo}}
+            <img  class="img-header" id="image-logo" src="{{logo}}" alt="{{name}}" />
+          {{else}}
+          <span class="header--custom-text">
+            {{name}}
+          </span>
+          {{/if}}
+        </a>
+      </div>
+    
+      <form class="d-flex">
+        <input class="form-control" type="search" placeholder="O que você está precisando?" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">
+          <span class=" icon-search">
+            <img src="https://i.postimg.cc/WpJnt3Zw/Group.png">
+          </span>
+        </button>
+      </form>
+      <div class="h-bag-icon">
+        <span class="icon-bag">
+          <img src="https://i.postimg.cc/0NJKk66T/Vector-2.png">
+        </span>
+        <span class="bag-icon-text">Vá para a <br><b>sua sacola</b></span>
+      </div>
+  </div>
+</nav>
+<nav class="nav">
+  <a class="nav-link active" aria-current="page" href="#"><img class="img-navlink" src="https://i.postimg.cc/FzcXxMdh/Vector-5.png"> SUPER OFERTAS</a>
+  <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/fTtf8wRc/icon-buld-idea.png"> ELETRODOMÉSTICOS</a>
+  <a class="nav-link" href="#"><img class="img-navlink" src="https://i.postimg.cc/3xLrWH2q/Group.png"> CASA</a>
+  <a class="nav-link"><img class="img-navlink" src="https://i.postimg.cc/h4NY0Z15/Vector-2.png"> CUIDADO E BELEZA</a>
+  <a class="nav-link"><img class="img-navlink" src="https://i.postimg.cc/B6SCpHjb/icon-box.png"> CAMA, MESA E BANHO</a>
+  <a class="nav-link"><img class="img-navlink" src="https://i.postimg.cc/fy3mqKDz/ferramentas.png"> FERRAMENTAS</a>
+</nav>
+<div class="line-colors"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
